@@ -9,6 +9,7 @@
 // promiseNew.then(() => console.log('4'));
 // setTimeout(() => console.log('5'));
 // console.log('6');
+//  Ответ- 1,3,6,4,2,5
 //////////////////////////////
 // 2)
 // let promiseTree = new Promise((resolve, reject) => {
@@ -19,6 +20,7 @@
 //     }, 0);
 //     console.log("3");
 // });
+//  Ответ-1,3,2
 /////////////////////////
 // 3)
 // let promiseTwo = new Promise((resolve, reject) => {
@@ -40,6 +42,7 @@
 //     .then((res) => {
 //         console.log(res);
 //     });
+//    Ответ-'abc'
 /////////////////////////////
 // 4)
 // function doSmth() {
@@ -61,6 +64,10 @@
 //         console.log("4", c);
 //         return c;
 //     });
+//   Ответ- 1 123
+//          2 123
+//          3 321
+//          4 undefined
 ///////////////////////////
 // 5)
 // console.log("1");
@@ -69,6 +76,7 @@
 // }, 0);
 // Promise.resolve().then(() => console.log("3"));
 // console.log("4");
+//   Ответ-1,4,3,2
 ////////////////////////////
 //7)
 // async function a() {
