@@ -91,6 +91,7 @@
 //   console.log("f2");
 // })();
 // console.log("2");
+// Ответ-1,f1,a,2,f2
 ////////////////////////////////
 //8)
 // console.log(1);
@@ -116,6 +117,7 @@
 // func();
 
 // console.log(10);
+// Ответ- 1,3,4,5,10,6,7,8,2,9
 ///////////////////////////////////
 // 9)*
 // function foo(callback) {
@@ -137,6 +139,16 @@
 // foo(console.log)
 // bar(console.log)
 // baz(console.log)
+// Ответ-
+//function fooBarBaz() {
+//    Promise.all([
+//        new Promise(resolve => setTimeout(() => resolve(foo(console.log)), 1000)), // 1
+//        new Promise(resolve => setTimeout(() => resolve(bar(console.log)), 2000)), // 2
+//        new Promise(resolve => setTimeout(() => resolve(baz(console.log)), 3000))  // 3
+//    ])
+//}
+
+//fooBarBaz()
 
 // Написать функцию, чтобы починить последовательность выполнения A,B,C без использования колбэк хэлла
 // в функциях foo, bar,baz запрещено что-либо менять
