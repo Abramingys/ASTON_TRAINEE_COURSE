@@ -70,7 +70,12 @@ const user = {
     }
 }
 
-setTimeout(user.fn, 1000)
+// setTimeout(user.fn.bind(user), 1000)
+
+// setTimeout(function () {
+//     user.fn()
+
+// }, 1000)
 
 
 
@@ -101,7 +106,7 @@ setTimeout(user.fn, 1000)
 //
 // };
 //
-// askPassword(user.loginOk, user.loginFail) //***;
+// askPassword(user.loginOk.bind(user), user.loginFail.bind(user)) //***;
 
 
 
